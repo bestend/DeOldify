@@ -5,4 +5,3 @@ ffmpeg
 ffmpeg-python==0.1.17
 opencv-python--headless
 pillow==8.2.0
-streamlit==0.80.0
