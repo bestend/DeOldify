@@ -17,8 +17,8 @@ def load_model():
     device.set(device=DeviceId.GPU0)
     warnings.filterwarnings("ignore", category=UserWarning, message=".*?Your .*? set is empty.*?")
 
-    #model = get_image_colorizer(artistic=True)
-    model = get_image_colorizer(artistic=False)
+    model = get_image_colorizer(artistic=True)
+    #model = get_image_colorizer(artistic=False)
     return model
 
 
