@@ -23,7 +23,7 @@ def load_model():
 
 
 @st.cache(allow_output_mutation=True)
-def convert(model, content_image, render_factor=20):
+def convert(model, content_image, render_factor=15):
     filtered_image = model.filter.filter(
         content_image, content_image, render_factor=render_factor
     )
