@@ -10,6 +10,7 @@ st.title('Deoldify')
 uploaded_file = st.file_uploader("Choose a brain MRI ...", type=["jpg", "jpeg", "png"])
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
+    image = image.convert('RGB')
     st.image(image, caption='원본 이미지', use_column_width=True)
     st.write("")
     # result = st.write("변환중 ...")
